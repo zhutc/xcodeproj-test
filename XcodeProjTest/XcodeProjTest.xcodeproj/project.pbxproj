@@ -274,11 +274,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "./framework/**";
-				HEADER_SEARCH_PATHS = "./header/**";
+				FRAMEWORK_SEARCH_PATHS = "./Debug/framework/**";
+				HEADER_SEARCH_PATHS = "../newDebug/header/**";
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "./library/**";
+				LIBRARY_SEARCH_PATHS = "./Debug/library/**";
 				PRODUCT_BUNDLE_IDENTIFIER = fff.XcodeProjTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -288,11 +288,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "./framework/**";
-				HEADER_SEARCH_PATHS = "./header/**";
+				FRAMEWORK_SEARCH_PATHS = "./Release/framework/**";
+				HEADER_SEARCH_PATHS = "./Release/header/**";
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "./library/**";
+				LIBRARY_SEARCH_PATHS = "./Release/library/**";
 				PRODUCT_BUNDLE_IDENTIFIER = fff.XcodeProjTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

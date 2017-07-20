@@ -15,7 +15,25 @@
 		F5D8DB6B1F0F731700F5927C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D8DB691F0F731700F5927C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9C3DF92F4B328350F21C639D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57E89AF1F20D44E00E069B0 /* XcodeProjLibA.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E89711F20C13900E069B0;
+			remoteInfo = XcodeProjLibA;
+		};
+		F57E89B31F20D44E00E069B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57E89AF1F20D44E00E069B0 /* XcodeProjLibA.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F57E89721F20C13900E069B0;
+			remoteInfo = XcodeProjLibA;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F57E89AF1F20D44E00E069B0 /* XcodeProjLibA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibA.xcodeproj; path = ../../XcodeProjLibA/XcodeProjLibA.xcodeproj; sourceTree = "<group>"; };
 		F5D8DB581F0F731700F5927C /* XcodeProjTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeProjTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D8DB5C1F0F731700F5927C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5D8DB5E1F0F731700F5927C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,10 +57,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F57E89A61F20CE0E00E069B0 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				F57E89AF1F20D44E00E069B0 /* XcodeProjLibA.xcodeproj */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		F57E89B01F20D44E00E069B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F57E89B41F20D44E00E069B0 /* libXcodeProjLibA.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F5D8DB4F1F0F731700F5927C = {
 			isa = PBXGroup;
 			children = (
 				F5D8DB5A1F0F731700F5927C /* XcodeProjTest */,
+				F57E89A61F20CE0E00E069B0 /* Dependency */,
 				F5D8DB591F0F731700F5927C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +128,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				215AA714603734FCE4EB0C78 /* PBXTargetDependency */,
 			);
 			name = XcodeProjTest;
 			productName = XcodeProjTest;
@@ -125,12 +161,28 @@
 			mainGroup = F5D8DB4F1F0F731700F5927C;
 			productRefGroup = F5D8DB591F0F731700F5927C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F57E89B01F20D44E00E069B0 /* Products */;
+					ProjectRef = F57E89AF1F20D44E00E069B0 /* XcodeProjLibA.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F5D8DB571F0F731700F5927C /* XcodeProjTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F57E89B41F20D44E00E069B0 /* libXcodeProjLibA.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libXcodeProjLibA.a;
+			remoteRef = F57E89B31F20D44E00E069B0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F5D8DB561F0F731700F5927C /* Resources */ = {
@@ -157,6 +209,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		215AA714603734FCE4EB0C78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XcodeProjLibA;
+			targetProxy = 9C3DF92F4B328350F21C639D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F5D8DB641F0F731700F5927C /* Main.storyboard */ = {
@@ -277,6 +337,7 @@
 				FRAMEWORK_SEARCH_PATHS = "./Debug/framework/**";
 				HEADER_SEARCH_PATHS = "../newDebug/header/**";
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "./Debug/library/**";
 				PRODUCT_BUNDLE_IDENTIFIER = fff.XcodeProjTest;
@@ -291,6 +352,7 @@
 				FRAMEWORK_SEARCH_PATHS = "./Release/framework/**";
 				HEADER_SEARCH_PATHS = "./Release/header/**";
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "./Release/library/**";
 				PRODUCT_BUNDLE_IDENTIFIER = fff.XcodeProjTest;

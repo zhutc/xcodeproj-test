@@ -9,5 +9,8 @@
 #import "XcodeProjLibA.h"
 
 @implementation XcodeProjLibA
-
++ (NSString *)version
+{
+    return @"XcodeProjLibA_1.0.0";
+}
 @end

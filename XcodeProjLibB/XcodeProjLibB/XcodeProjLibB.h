@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface XcodeProjLibB : NSObject
-
++ (NSString *)version;
 @end

@@ -48,6 +48,21 @@ if native_targets.kind_of?(Array)
 end
 
 
+path_lib_a = "../XcodeProjLibA/XcodeProjLibA.xcodeproj"
+
+target_xcodeproj_test = native_targets.first
+if target_xcodeproj_test && target_xcodeproj_test.name == "XcodeProjTest"
+  #给主工程的target配置dependency
+  lib_a_project = Xcodeproj::Project.open(path_lib_a)
+  lib_a_target = lib_a_project.native_targets.first
+  if lib_a_project
+    target_xcodeproj_test.add_dependency lib_a_target # 添加target依赖
+    target_xcodeproj_test.
+    project.save
+  end
+end
+
+
 
 =begin
 

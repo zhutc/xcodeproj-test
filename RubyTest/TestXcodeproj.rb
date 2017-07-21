@@ -50,17 +50,39 @@ end
 
 path_lib_a = "../XcodeProjLibA/XcodeProjLibA.xcodeproj"
 
-target_xcodeproj_test = native_targets.first
+
+# 1.添加target依赖
+main_target =  native_targets.first
+target_xcodeproj_test = main_target
 if target_xcodeproj_test && target_xcodeproj_test.name == "XcodeProjTest"
   #给主工程的target配置dependency
   lib_a_project = Xcodeproj::Project.open(path_lib_a)
   lib_a_target = lib_a_project.native_targets.first
   if lib_a_project
-    target_xcodeproj_test.add_dependency lib_a_target # 添加target依赖
-    target_xcodeproj_test.
-    project.save
+    target_xcodeproj_test.add_dependency lib_a_target
+
+    #2. 添加主target FrameworkBuildPhase
+    #首先从maingorup中获取到PBXReferenceProxy
+    referenceproxy_lib_a = nil
+    project.objects_by_uuid.each do | uuid,ob |
+      if ob.isa == "PBXReferenceProxy"
+        referenceproxy_lib_a = ob
+      end
+    end
+
+    # 给frameworkbuildphase 添加buildfile
+    frameworkbuildphase_main_target = main_target.frameworks_build_phases
+    # 添加buildfile
+    frameworkbuildphase_main_target.add_file_reference(referenceproxy_lib_a)
+
   end
 end
+
+project.save
+
+
+
+
 
 
 

@@ -11,6 +11,16 @@
 		F57E89781F20C13900E069B0 /* XcodeProjLibA.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F57E89751F20C13900E069B0 /* XcodeProjLibA.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		00A0EF061F239AA600B6D241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F57E896A1F20C13900E069B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A0EEFF1F239A9B00B6D241;
+			remoteInfo = XcodeProjLibABundle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		F57E89701F20C13900E069B0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -25,12 +35,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00A0EF001F239A9B00B6D241 /* XcodeProjLibABundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeProjLibABundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		00A0EF021F239A9B00B6D241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57E89721F20C13900E069B0 /* libXcodeProjLibA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXcodeProjLibA.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57E89751F20C13900E069B0 /* XcodeProjLibA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XcodeProjLibA.h; sourceTree = "<group>"; };
 		F57E89761F20C13900E069B0 /* XcodeProjLibA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XcodeProjLibA.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		00A0EEFD1F239A9B00B6D241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F57E896F1F20C13900E069B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +60,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A0EF011F239A9B00B6D241 /* XcodeProjLibABundle */ = {
+			isa = PBXGroup;
+			children = (
+				00A0EF021F239A9B00B6D241 /* Info.plist */,
+			);
+			path = XcodeProjLibABundle;
+			sourceTree = "<group>";
+		};
 		F57E89691F20C13900E069B0 = {
 			isa = PBXGroup;
 			children = (
 				F57E89741F20C13900E069B0 /* XcodeProjLibA */,
+				00A0EF011F239A9B00B6D241 /* XcodeProjLibABundle */,
 				F57E89731F20C13900E069B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				F57E89721F20C13900E069B0 /* libXcodeProjLibA.a */,
+				00A0EF001F239A9B00B6D241 /* XcodeProjLibABundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +98,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		00A0EEFF1F239A9B00B6D241 /* XcodeProjLibABundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00A0EF051F239A9B00B6D241 /* Build configuration list for PBXNativeTarget "XcodeProjLibABundle" */;
+			buildPhases = (
+				00A0EEFC1F239A9B00B6D241 /* Sources */,
+				00A0EEFD1F239A9B00B6D241 /* Frameworks */,
+				00A0EEFE1F239A9B00B6D241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeProjLibABundle;
+			productName = XcodeProjLibABundle;
+			productReference = 00A0EF001F239A9B00B6D241 /* XcodeProjLibABundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		F57E89711F20C13900E069B0 /* XcodeProjLibA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F57E897B1F20C13900E069B0 /* Build configuration list for PBXNativeTarget "XcodeProjLibA" */;
@@ -80,6 +126,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				00A0EF071F239AA600B6D241 /* PBXTargetDependency */,
 			);
 			name = XcodeProjLibA;
 			productName = XcodeProjLibA;
@@ -95,6 +142,10 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = ctrip.com;
 				TargetAttributes = {
+					00A0EEFF1F239A9B00B6D241 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
 					F57E89711F20C13900E069B0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
@@ -114,11 +165,29 @@
 			projectRoot = "";
 			targets = (
 				F57E89711F20C13900E069B0 /* XcodeProjLibA */,
+				00A0EEFF1F239A9B00B6D241 /* XcodeProjLibABundle */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		00A0EEFE1F239A9B00B6D241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		00A0EEFC1F239A9B00B6D241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F57E896E1F20C13900E069B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,7 +198,47 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		00A0EF071F239AA600B6D241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00A0EEFF1F239A9B00B6D241 /* XcodeProjLibABundle */;
+			targetProxy = 00A0EF061F239AA600B6D241 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		00A0EF031F239A9B00B6D241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodeProjLibABundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = CT.XcodeProjLibABundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		00A0EF041F239A9B00B6D241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = XcodeProjLibABundle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_BUNDLE_IDENTIFIER = CT.XcodeProjLibABundle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		F57E89791F20C13900E069B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -243,6 +352,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		00A0EF051F239A9B00B6D241 /* Build configuration list for PBXNativeTarget "XcodeProjLibABundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A0EF031F239A9B00B6D241 /* Debug */,
+				00A0EF041F239A9B00B6D241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F57E896D1F20C13900E069B0 /* Build configuration list for PBXProject "XcodeProjLibA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

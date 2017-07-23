@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "XcodeProjLibA.h"
+#import "XcodeProjLibB.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@",[XcodeProjLibA version]);
+    NSLog(@"%@",[XcodeProjLibB version]);
 }
 
 

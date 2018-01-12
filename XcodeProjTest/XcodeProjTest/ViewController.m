@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "XcodeProjLibA.h"
-#import "XcodeProjLibB.h"
+//#import "XcodeProjLibB.h"
 @interface ViewController ()
 
 @end
@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@",[XcodeProjLibA version]);
-    NSLog(@"%@",[XcodeProjLibB version]);
+//    NSLog(@"%@",[XcodeProjLibB version]);
 }
 
 

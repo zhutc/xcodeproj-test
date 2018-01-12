@@ -58,15 +58,26 @@ class CTXcodeProjManager
     project.save
   end
 
+  def test_clear()
+      dependency_group = project.main_group["Dependency"]
+
+      if dependency_group
+        dependency_group.clear()
+      end
+      self.project.save
+  end
 
 end
 
 root_path = "../XcodeProjTest/XcodeProjTest.xcodeproj"
 manager = CTXcodeProjManager.new root_path
 
+
 sub_path_a = "../XcodeProjLibA/XcodeProjLibA.xcodeproj"
 sub_path_b = "../XcodeProjLibB/XcodeProjLibB.xcodeproj"
 
 # 添加subproject
 manager.add_subproject sub_path_a
-manager.add_subproject sub_path_b
+# manager.add_subproject sub_path_b
+
+# manager.test_clear

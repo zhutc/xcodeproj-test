@@ -7,41 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70D2DF17C4232D78AD7D4856 /* libXcodeProjLibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C60B1B676FCF6D57FEFF1FB0 /* libXcodeProjLibA.a */; };
+		85824D372DB4D75264AF4EB5 /* libXcodeProjLibB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D7A5A36963E48CA9691625 /* libXcodeProjLibB.a */; };
 		F5D8DB5D1F0F731700F5927C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB5C1F0F731700F5927C /* main.m */; };
 		F5D8DB601F0F731700F5927C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB5F1F0F731700F5927C /* AppDelegate.m */; };
 		F5D8DB631F0F731700F5927C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB621F0F731700F5927C /* ViewController.m */; };
 		F5D8DB661F0F731700F5927C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D8DB641F0F731700F5927C /* Main.storyboard */; };
 		F5D8DB681F0F731700F5927C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D8DB671F0F731700F5927C /* Assets.xcassets */; };
 		F5D8DB6B1F0F731700F5927C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D8DB691F0F731700F5927C /* LaunchScreen.storyboard */; };
-		F5F848592008C0AC001D9DD9 /* libXcodeProjLibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3637AEF0DD4790ECBF462F57 /* libXcodeProjLibA.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2D183CE466F16B5ACD6D3546 /* PBXContainerItemProxy */ = {
+		450348AE3A299672C8318064 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D3ADDADE0C78F00B0394FD6F /* XcodeProjLibA.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F57E89711F20C13900E069B0;
-			remoteInfo = XcodeProjLibA;
-		};
-		2DDEF4A685718577DD7FD4A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D3ADDADE0C78F00B0394FD6F /* XcodeProjLibA.xcodeproj */;
+			containerPortal = 5E83AF68D6994EA748023EA0 /* XcodeProjLibA.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F57E89721F20C13900E069B0;
 			remoteInfo = Subproject;
 		};
-		6594600A677D41622DEEC84F /* PBXContainerItemProxy */ = {
+		5455E4AF39CA7BB6024CF5F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D3ADDADE0C78F00B0394FD6F /* XcodeProjLibA.xcodeproj */;
+			containerPortal = 285B7F5012F1C95B290F3497 /* XcodeProjLibB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F57E89871F20C44F00E069B0;
+			remoteInfo = Subproject;
+		};
+		79A948357D6DEB14F4EF329E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 285B7F5012F1C95B290F3497 /* XcodeProjLibB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E89861F20C44F00E069B0;
+			remoteInfo = XcodeProjLibB;
+		};
+		8490EB72D280EE5BCA2D05B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E83AF68D6994EA748023EA0 /* XcodeProjLibA.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 00A0EF001F239A9B00B6D241;
 			remoteInfo = Subproject;
 		};
+		B9E2C323F1B896779403D33A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E83AF68D6994EA748023EA0 /* XcodeProjLibA.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E89711F20C13900E069B0;
+			remoteInfo = XcodeProjLibA;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D3ADDADE0C78F00B0394FD6F /* XcodeProjLibA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibA.xcodeproj; path = ../../XcodeProjLibA/XcodeProjLibA.xcodeproj; sourceTree = "<group>"; };
+		285B7F5012F1C95B290F3497 /* XcodeProjLibB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibB.xcodeproj; path = ../../XcodeProjLibB/XcodeProjLibB.xcodeproj; sourceTree = "<group>"; };
+		5E83AF68D6994EA748023EA0 /* XcodeProjLibA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibA.xcodeproj; path = ../../XcodeProjLibA/XcodeProjLibA.xcodeproj; sourceTree = "<group>"; };
 		F5D8DB581F0F731700F5927C /* XcodeProjTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeProjTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D8DB5C1F0F731700F5927C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5D8DB5E1F0F731700F5927C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,18 +75,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5F848592008C0AC001D9DD9 /* libXcodeProjLibA.a in Frameworks */,
+				70D2DF17C4232D78AD7D4856 /* libXcodeProjLibA.a in Frameworks */,
+				85824D372DB4D75264AF4EB5 /* libXcodeProjLibB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1545B9F3FC18F348AB462127 /* Products */ = {
+		B9A0BD7DABE3BFB7326559B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3637AEF0DD4790ECBF462F57 /* libXcodeProjLibA.a */,
-				340C129E4333764A9B2592C7 /* XcodeProjLibABundle.bundle */,
+				C60B1B676FCF6D57FEFF1FB0 /* libXcodeProjLibA.a */,
+				E1E5E24BFBDC535AAD0979CA /* XcodeProjLibABundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF7D3A4D694277250238EF02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44D7A5A36963E48CA9691625 /* libXcodeProjLibB.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +103,8 @@
 		F57E89A61F20CE0E00E069B0 /* Dependency */ = {
 			isa = PBXGroup;
 			children = (
-				D3ADDADE0C78F00B0394FD6F /* XcodeProjLibA.xcodeproj */,
+				5E83AF68D6994EA748023EA0 /* XcodeProjLibA.xcodeproj */,
+				285B7F5012F1C95B290F3497 /* XcodeProjLibB.xcodeproj */,
 			);
 			path = Dependency;
 			sourceTree = "<group>";
@@ -146,7 +172,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				B1B6E201C2180A27137A1C45 /* PBXTargetDependency */,
+				CA486F45D471E34AC7EF6DBF /* PBXTargetDependency */,
+				F400A7D16A35A04271347EF5 /* PBXTargetDependency */,
 			);
 			name = XcodeProjTest;
 			productName = XcodeProjTest;
@@ -181,8 +208,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 1545B9F3FC18F348AB462127 /* Products */;
-					ProjectRef = D3ADDADE0C78F00B0394FD6F /* XcodeProjLibA.xcodeproj */;
+					ProductGroup = B9A0BD7DABE3BFB7326559B6 /* Products */;
+					ProjectRef = 5E83AF68D6994EA748023EA0 /* XcodeProjLibA.xcodeproj */;
+				},
+				{
+					ProductGroup = DF7D3A4D694277250238EF02 /* Products */;
+					ProjectRef = 285B7F5012F1C95B290F3497 /* XcodeProjLibB.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -193,18 +224,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		340C129E4333764A9B2592C7 /* XcodeProjLibABundle.bundle */ = {
+		44D7A5A36963E48CA9691625 /* libXcodeProjLibB.a */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = XcodeProjLibABundle.bundle;
-			remoteRef = 6594600A677D41622DEEC84F /* PBXContainerItemProxy */;
+			fileType = archive.ar;
+			path = libXcodeProjLibB.a;
+			remoteRef = 5455E4AF39CA7BB6024CF5F1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3637AEF0DD4790ECBF462F57 /* libXcodeProjLibA.a */ = {
+		C60B1B676FCF6D57FEFF1FB0 /* libXcodeProjLibA.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libXcodeProjLibA.a;
-			remoteRef = 2DDEF4A685718577DD7FD4A4 /* PBXContainerItemProxy */;
+			remoteRef = 450348AE3A299672C8318064 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E1E5E24BFBDC535AAD0979CA /* XcodeProjLibABundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.plug-in";
+			path = XcodeProjLibABundle.bundle;
+			remoteRef = 8490EB72D280EE5BCA2D05B5 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -236,10 +274,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B1B6E201C2180A27137A1C45 /* PBXTargetDependency */ = {
+		CA486F45D471E34AC7EF6DBF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XcodeProjLibA;
-			targetProxy = 2D183CE466F16B5ACD6D3546 /* PBXContainerItemProxy */;
+			targetProxy = B9E2C323F1B896779403D33A /* PBXContainerItemProxy */;
+		};
+		F400A7D16A35A04271347EF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XcodeProjLibB;
+			targetProxy = 79A948357D6DEB14F4EF329E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

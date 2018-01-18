@@ -5,6 +5,16 @@ class CTXcodeProjManager
   attr_accessor :root_project_path
   attr_reader :main_target
   attr_reader :project # 主工程PBXProject
+  attr_reader :group_name_for_project
+  attr_reader :group_name_for_library
+
+  def group_name_for_library
+    "CTLibraryDependency"
+  end
+
+  def group_name_for_project
+    "CTProjectDependency"
+  end
 
   def main_target
     return project.native_targets.first
@@ -13,6 +23,26 @@ class CTXcodeProjManager
   def initialize(path)
     self.root_project_path = path
     @project = Xcodeproj::Project.open(path)
+
+  end
+
+  # 创建对应的group
+  def create_group_if_need(group_name)
+    if not project.main_group[group_name]
+        project.new_group group_name
+    end
+    project.main_group[group_name]
+  end
+
+  def add_search_path(path)
+    search_path = path
+    case File.extname(path).downcase
+      when '.xcodeproj'
+        search_path = File.join(File.split(path).first,"**")
+      else
+
+    end
+
 
   end
 
@@ -25,7 +55,7 @@ class CTXcodeProjManager
   def add_subproject(path)
     # 添加sub到Dependency group中
     path = Pathname(path).realpath
-    dependency_group = project.main_group["Dependency"]
+    dependency_group = create_group_if_need group_name_for_project
 
     sub_filereference = nil
     if dependency_group

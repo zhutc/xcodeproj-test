@@ -37,12 +37,27 @@ class CTXcodeProjManager
   def add_search_path(path)
     search_path = path
     case File.extname(path).downcase
-      when '.xcodeproj'
-        search_path = File.join(File.split(path).first,"**")
+      when '.xcodeproj' # xcodeproj方式配置搜索路径
+        # search_path = File.join(File.split(path).first,"**")
+        # 为了能delete search path 直接追加父目录
+        search_path = File.join(path , "../**") # ../text.xcodeproj  =>  ../text.xcodeproj/../**
       else
-
+        # 静态库类型
     end
 
+    # build_configuraiton 配置search_path
+    self.main_target.build_configurations.each do | configuration |
+      if configuration.is_a?(Xcodeproj::Project::XCBuildConfiguration)
+        header_search_paths = configuration.build_settings["HEADER_SEARCH_PATHS"]
+        puts header_search_paths
+        header_search_paths = [] unless (header_search_paths != "")
+        if header_search_paths.is_a?(Array) and not header_search_paths.include?(search_path)
+          header_search_paths << search_path
+        end
+        configuration.build_settings["HEADER_SEARCH_PATHS"] =  header_search_paths
+      end
+    end
+    self.project.save
 
   end
 
@@ -134,9 +149,11 @@ sub_path_a = "../XcodeProjLibA/XcodeProjLibA.xcodeproj"
 sub_path_b = "../XcodeProjLibB/XcodeProjLibB.xcodeproj"
 
 manager.remove_subproject "XcodeProjLibA.xcodeproj"
-manager.remove_subproject "XcodeProjLibB.xcodeproj"
-
-# 添加subproject
+# manager.remove_subproject "XcodeProjLibB.xcodeproj"
+#
+# # 添加subproject
 manager.add_subproject sub_path_a
-manager.add_subproject sub_path_b
+# manager.add_subproject sub_path_b
+
+manager.add_search_path sub_path_a
 

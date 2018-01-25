@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D5B390EE6B65840C7027A75 /* libXcodeProjLibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F001D05C7B46C8787DD120F9 /* libXcodeProjLibA.a */; };
+		CE1BC2EF2174A2EB38DDE02C /* libXcodeProjLibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB55EF469691A8374DC8A22B /* libXcodeProjLibA.a */; };
+		ED36E6F55ABF18E979A0854F /* libXcodeProjLibB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4337D6D621F718349E1799 /* libXcodeProjLibB.a */; };
 		F5D8DB5D1F0F731700F5927C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB5C1F0F731700F5927C /* main.m */; };
 		F5D8DB601F0F731700F5927C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB5F1F0F731700F5927C /* AppDelegate.m */; };
 		F5D8DB631F0F731700F5927C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB621F0F731700F5927C /* ViewController.m */; };
@@ -17,23 +18,37 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		29BB58C9EE97F6AF2E00979B /* PBXContainerItemProxy */ = {
+		146EC7C7D8A52BA132D1EA08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0991992698EACDA04BE936AD /* XcodeProjLibA.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 00A0EF001F239A9B00B6D241;
-			remoteInfo = Subproject;
-		};
-		494CE0FFF3E1993C50477944 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0991992698EACDA04BE936AD /* XcodeProjLibA.xcodeproj */;
+			containerPortal = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F57E89721F20C13900E069B0;
 			remoteInfo = Subproject;
 		};
-		D50079B295D623FC2B1285BA /* PBXContainerItemProxy */ = {
+		31733534B0639C9A12B1F6E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0991992698EACDA04BE936AD /* XcodeProjLibA.xcodeproj */;
+			containerPortal = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00A0EF001F239A9B00B6D241;
+			remoteInfo = Subproject;
+		};
+		7F65DF3D78145C269DBF3AE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E89861F20C44F00E069B0;
+			remoteInfo = XcodeProjLibB;
+		};
+		BE216F5DEFFA993B70FF7897 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F57E89871F20C44F00E069B0;
+			remoteInfo = Subproject;
+		};
+		D7B45C118C7092EDBA169274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F57E89711F20C13900E069B0;
 			remoteInfo = XcodeProjLibA;
@@ -41,7 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0991992698EACDA04BE936AD /* XcodeProjLibA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibA.xcodeproj; path = ../XcodeProjLibA/XcodeProjLibA.xcodeproj; sourceTree = "<group>"; };
+		167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibB.xcodeproj; path = ../XcodeProjLibB/XcodeProjLibB.xcodeproj; sourceTree = "<group>"; };
+		37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibA.xcodeproj; path = ../XcodeProjLibA/XcodeProjLibA.xcodeproj; sourceTree = "<group>"; };
 		F5D8DB581F0F731700F5927C /* XcodeProjTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeProjTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D8DB5C1F0F731700F5927C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5D8DB5E1F0F731700F5927C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,18 +75,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D5B390EE6B65840C7027A75 /* libXcodeProjLibA.a in Frameworks */,
+				CE1BC2EF2174A2EB38DDE02C /* libXcodeProjLibA.a in Frameworks */,
+				ED36E6F55ABF18E979A0854F /* libXcodeProjLibB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B375707D8AD78A0825382E1 /* Products */ = {
+		2133A9E691061B6F37E0F6FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F001D05C7B46C8787DD120F9 /* libXcodeProjLibA.a */,
-				DE2099792C9C04E2C6244D94 /* XcodeProjLibABundle.bundle */,
+				4E4337D6D621F718349E1799 /* libXcodeProjLibB.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF3F8CA1A6E02A75016FE4AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB55EF469691A8374DC8A22B /* libXcodeProjLibA.a */,
+				AB005FEE0664A689D6ED283E /* XcodeProjLibABundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,7 +103,8 @@
 		CFB21285E039D76C6CF76199 /* CTProjectDependency */ = {
 			isa = PBXGroup;
 			children = (
-				0991992698EACDA04BE936AD /* XcodeProjLibA.xcodeproj */,
+				37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */,
+				167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */,
 			);
 			name = CTProjectDependency;
 			sourceTree = "<group>";
@@ -154,7 +180,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				C6079A680FDFBF3F291D55AC /* PBXTargetDependency */,
+				938943BD2BF9DE8C760896C4 /* PBXTargetDependency */,
+				6E97446FA95E77BABC08294D /* PBXTargetDependency */,
 			);
 			name = XcodeProjTest;
 			productName = XcodeProjTest;
@@ -172,6 +199,7 @@
 				TargetAttributes = {
 					F5D8DB571F0F731700F5927C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = S6JRCXC6CG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -189,8 +217,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9B375707D8AD78A0825382E1 /* Products */;
-					ProjectRef = 0991992698EACDA04BE936AD /* XcodeProjLibA.xcodeproj */;
+					ProductGroup = BF3F8CA1A6E02A75016FE4AE /* Products */;
+					ProjectRef = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
+				},
+				{
+					ProductGroup = 2133A9E691061B6F37E0F6FC /* Products */;
+					ProjectRef = 167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -201,18 +233,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DE2099792C9C04E2C6244D94 /* XcodeProjLibABundle.bundle */ = {
+		4E4337D6D621F718349E1799 /* libXcodeProjLibB.a */ = {
 			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = XcodeProjLibABundle.bundle;
-			remoteRef = 29BB58C9EE97F6AF2E00979B /* PBXContainerItemProxy */;
+			fileType = archive.ar;
+			path = libXcodeProjLibB.a;
+			remoteRef = BE216F5DEFFA993B70FF7897 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F001D05C7B46C8787DD120F9 /* libXcodeProjLibA.a */ = {
+		AB005FEE0664A689D6ED283E /* XcodeProjLibABundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.plug-in";
+			path = XcodeProjLibABundle.bundle;
+			remoteRef = 31733534B0639C9A12B1F6E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BB55EF469691A8374DC8A22B /* libXcodeProjLibA.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libXcodeProjLibA.a;
-			remoteRef = 494CE0FFF3E1993C50477944 /* PBXContainerItemProxy */;
+			remoteRef = 146EC7C7D8A52BA132D1EA08 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -244,10 +283,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C6079A680FDFBF3F291D55AC /* PBXTargetDependency */ = {
+		6E97446FA95E77BABC08294D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XcodeProjLibB;
+			targetProxy = 7F65DF3D78145C269DBF3AE0 /* PBXContainerItemProxy */;
+		};
+		938943BD2BF9DE8C760896C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XcodeProjLibA;
-			targetProxy = D50079B295D623FC2B1285BA /* PBXContainerItemProxy */;
+			targetProxy = D7B45C118C7092EDBA169274 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -367,8 +411,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S6JRCXC6CG;
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "../XcodeProjLibA/XcodeProjLibA.xcodeproj/../**";
+				HEADER_SEARCH_PATHS = "/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**";
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -382,8 +427,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S6JRCXC6CG;
 				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "../XcodeProjLibA/XcodeProjLibA.xcodeproj/../**";
+				HEADER_SEARCH_PATHS = "/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**";
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

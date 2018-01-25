@@ -50,16 +50,51 @@ class CTXcodeProjManager
       if configuration.is_a?(Xcodeproj::Project::XCBuildConfiguration)
         header_search_paths = configuration.build_settings["HEADER_SEARCH_PATHS"]
         puts header_search_paths
-        header_search_paths = [] unless (header_search_paths != "")
-        if header_search_paths.is_a?(Array) and not header_search_paths.include?(search_path)
-          header_search_paths << search_path
+        if header_search_paths.is_a?(String)
+          if header_search_paths == ""
+            header_search_paths = []
+          else
+            header_search_paths = [header_search_paths]
+          end
         end
-        configuration.build_settings["HEADER_SEARCH_PATHS"] =  header_search_paths
+        header_search_paths = [] unless (header_search_paths != "")
+        if header_search_paths.is_a?(Array)
+          new_header_search_paths = Array.new header_search_paths
+          if not header_search_paths.include?(search_path)
+            new_header_search_paths << search_path
+          end
+          configuration.build_settings["HEADER_SEARCH_PATHS"] =  new_header_search_paths
+        end
+
       end
     end
     self.project.save
-
   end
+
+  def remove_search_path(path)
+    search_path = path
+
+    # build_configuraiton 配置search_path
+    self.main_target.build_configurations.each do | configuration |
+      if configuration.is_a?(Xcodeproj::Project::XCBuildConfiguration)
+        header_search_paths = configuration.build_settings["HEADER_SEARCH_PATHS"]
+        if header_search_paths.is_a?(Array)
+          new_header_search_paths = Array.new(header_search_paths)
+          header_search_paths.each do | value |
+            if value.include?( search_path )
+                new_header_search_paths.delete value
+            end
+          end
+          configuration.build_settings["HEADER_SEARCH_PATHS"] =  new_header_search_paths
+        else header_search_paths.is_a?(String) and header_search_paths.include? search_path
+            header_search_paths = ""
+            configuration.build_settings["HEADER_SEARCH_PATHS"] = header_search_paths
+        end
+      end
+    end
+    self.project.save
+  end
+
 
   #添加一个sub project
   # main_target dependency sub
@@ -67,7 +102,7 @@ class CTXcodeProjManager
   # main_frameworks_build_phase add new reference_proxy build_file
   # @path : 子工程的project path , ex : "../XcodeProjLibA/XcodeProjLibA.xcodeproj"
 
-  def add_subproject(path)
+  def add_subproject(path , add_search_path = true)
     # 添加sub到Dependency group中
     path = Pathname(path).realpath
     dependency_group = create_group_if_need group_name_for_project
@@ -103,6 +138,11 @@ class CTXcodeProjManager
     main_frameworkbuildphase = main_target.frameworks_build_phase
     main_frameworkbuildphase.add_file_reference sub_referenceproxy
 
+    #默认配置头文件
+    if add_search_path
+      self.add_search_path path
+    end
+
     project.save
   end
 
@@ -110,7 +150,7 @@ class CTXcodeProjManager
   # remove file_reference target_dependency and frameworks_build_phase
   # @xcodeProj_name 传入子工程的project_name ex : "XcodeProjLibA.xcodeproj"
 
-  def remove_subproject(xcodeProj_name )
+  def remove_subproject(xcodeProj_name , remove_search_path = true)
     # 获取子工程的project_reference
     project_references = self.project.root_object.project_references
 
@@ -135,7 +175,10 @@ class CTXcodeProjManager
         end
     end
 
-    #移除文件引用
+    if remove_search_path
+      self.remove_search_path xcodeProj_name
+    end
+
     self.project.save
   end
 
@@ -149,11 +192,9 @@ sub_path_a = "../XcodeProjLibA/XcodeProjLibA.xcodeproj"
 sub_path_b = "../XcodeProjLibB/XcodeProjLibB.xcodeproj"
 
 manager.remove_subproject "XcodeProjLibA.xcodeproj"
-# manager.remove_subproject "XcodeProjLibB.xcodeproj"
+manager.remove_subproject "XcodeProjLibB.xcodeproj"
 #
-# # 添加subproject
+# # 添加subprojectsub_path_a
 manager.add_subproject sub_path_a
-# manager.add_subproject sub_path_b
-
-manager.add_search_path sub_path_a
+manager.add_subproject sub_path_b
 

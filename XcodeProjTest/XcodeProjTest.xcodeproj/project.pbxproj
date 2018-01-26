@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE1BC2EF2174A2EB38DDE02C /* libXcodeProjLibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB55EF469691A8374DC8A22B /* libXcodeProjLibA.a */; };
-		ED36E6F55ABF18E979A0854F /* libXcodeProjLibB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4337D6D621F718349E1799 /* libXcodeProjLibB.a */; };
+		05091453AEC1563105B049F0 /* libXcodeProjLibB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AD983D07D342E5822D7A96 /* libXcodeProjLibB.a */; };
+		18CCE18578DD4F72ADE45A6E /* ARBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0217194593595FF0CF480039 /* ARBundle.bundle */; };
+		418E786BB0636EA08177E9DB /* libXcodeProjLibA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22570C585022FCBD9ED5BE1D /* libXcodeProjLibA.a */; };
+		F4B9B5EE3AD3FBB6EDCEB4E5 /* libXcodeProjLibC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52058BA578086C2E234A9121 /* libXcodeProjLibC.a */; };
 		F5D8DB5D1F0F731700F5927C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB5C1F0F731700F5927C /* main.m */; };
 		F5D8DB601F0F731700F5927C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB5F1F0F731700F5927C /* AppDelegate.m */; };
 		F5D8DB631F0F731700F5927C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D8DB621F0F731700F5927C /* ViewController.m */; };
@@ -18,46 +20,49 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		146EC7C7D8A52BA132D1EA08 /* PBXContainerItemProxy */ = {
+		0B50C19E80557E6780B5F527 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F57E89721F20C13900E069B0;
-			remoteInfo = Subproject;
-		};
-		31733534B0639C9A12B1F6E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 00A0EF001F239A9B00B6D241;
-			remoteInfo = Subproject;
-		};
-		7F65DF3D78145C269DBF3AE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F57E89861F20C44F00E069B0;
-			remoteInfo = XcodeProjLibB;
-		};
-		BE216F5DEFFA993B70FF7897 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */;
+			containerPortal = 222AC9C68723A437C3146058 /* XcodeProjLibB.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F57E89871F20C44F00E069B0;
 			remoteInfo = Subproject;
 		};
-		D7B45C118C7092EDBA169274 /* PBXContainerItemProxy */ = {
+		37760BE4B07A429500ADD57F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
+			containerPortal = 222AC9C68723A437C3146058 /* XcodeProjLibB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F57E89861F20C44F00E069B0;
+			remoteInfo = XcodeProjLibB;
+		};
+		9C20C25F53D74DD0619C59FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6468EB2D4B575385443AF763 /* XcodeProjLibA.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F57E89711F20C13900E069B0;
 			remoteInfo = XcodeProjLibA;
 		};
+		AD8366795AE308EC51AF539F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6468EB2D4B575385443AF763 /* XcodeProjLibA.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 00A0EF001F239A9B00B6D241;
+			remoteInfo = Subproject;
+		};
+		FCA7F1B422E15EA0E37AA18C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6468EB2D4B575385443AF763 /* XcodeProjLibA.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F57E89721F20C13900E069B0;
+			remoteInfo = Subproject;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibB.xcodeproj; path = ../XcodeProjLibB/XcodeProjLibB.xcodeproj; sourceTree = "<group>"; };
-		37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibA.xcodeproj; path = ../XcodeProjLibA/XcodeProjLibA.xcodeproj; sourceTree = "<group>"; };
+		0217194593595FF0CF480039 /* ARBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = ARBundle.bundle; path = ../libraries/libC/ARBundle.bundle; sourceTree = "<group>"; };
+		222AC9C68723A437C3146058 /* XcodeProjLibB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibB.xcodeproj; path = ../XcodeProjLibB/XcodeProjLibB.xcodeproj; sourceTree = "<group>"; };
+		52058BA578086C2E234A9121 /* libXcodeProjLibC.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libXcodeProjLibC.a; path = ../libraries/libC/libXcodeProjLibC.a; sourceTree = "<group>"; };
+		6468EB2D4B575385443AF763 /* XcodeProjLibA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XcodeProjLibA.xcodeproj; path = ../XcodeProjLibA/XcodeProjLibA.xcodeproj; sourceTree = "<group>"; };
+		BC59209731BABA59454B468F /* include */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = include; path = ../libraries/libC/include; sourceTree = "<group>"; };
 		F5D8DB581F0F731700F5927C /* XcodeProjTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeProjTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D8DB5C1F0F731700F5927C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5D8DB5E1F0F731700F5927C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -75,38 +80,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE1BC2EF2174A2EB38DDE02C /* libXcodeProjLibA.a in Frameworks */,
-				ED36E6F55ABF18E979A0854F /* libXcodeProjLibB.a in Frameworks */,
+				F4B9B5EE3AD3FBB6EDCEB4E5 /* libXcodeProjLibC.a in Frameworks */,
+				418E786BB0636EA08177E9DB /* libXcodeProjLibA.a in Frameworks */,
+				05091453AEC1563105B049F0 /* libXcodeProjLibB.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2133A9E691061B6F37E0F6FC /* Products */ = {
+		19C7CC85F9E87EF1897FE3F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4E4337D6D621F718349E1799 /* libXcodeProjLibB.a */,
+				43AD983D07D342E5822D7A96 /* libXcodeProjLibB.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF3F8CA1A6E02A75016FE4AE /* Products */ = {
+		1ECB0F32DCA263AA307F5BC3 /* CTProjectDependency */ = {
 			isa = PBXGroup;
 			children = (
-				BB55EF469691A8374DC8A22B /* libXcodeProjLibA.a */,
-				AB005FEE0664A689D6ED283E /* XcodeProjLibABundle.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CFB21285E039D76C6CF76199 /* CTProjectDependency */ = {
-			isa = PBXGroup;
-			children = (
-				37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */,
-				167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */,
+				6468EB2D4B575385443AF763 /* XcodeProjLibA.xcodeproj */,
+				222AC9C68723A437C3146058 /* XcodeProjLibB.xcodeproj */,
 			);
 			name = CTProjectDependency;
+			sourceTree = "<group>";
+		};
+		3BA9CA0B602C56F673C8739D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22570C585022FCBD9ED5BE1D /* libXcodeProjLibA.a */,
+				8E698C76E4E579204E1FD645 /* XcodeProjLibABundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1877D87A25BC848D6BEA4CE /* XcodeProjLibC */ = {
+			isa = PBXGroup;
+			children = (
+				52058BA578086C2E234A9121 /* libXcodeProjLibC.a */,
+				0217194593595FF0CF480039 /* ARBundle.bundle */,
+				BC59209731BABA59454B468F /* include */,
+			);
+			name = XcodeProjLibC;
+			sourceTree = "<group>";
+		};
+		F0A7B87D314FAA84FD9884A2 /* CTLibraryDependency */ = {
+			isa = PBXGroup;
+			children = (
+				B1877D87A25BC848D6BEA4CE /* XcodeProjLibC */,
+			);
+			name = CTLibraryDependency;
 			sourceTree = "<group>";
 		};
 		F57E89A61F20CE0E00E069B0 /* Dependency */ = {
@@ -123,7 +147,8 @@
 				F57E89A61F20CE0E00E069B0 /* Dependency */,
 				F5D8DB591F0F731700F5927C /* Products */,
 				F5F848562008BB75001D9DD9 /* Frameworks */,
-				CFB21285E039D76C6CF76199 /* CTProjectDependency */,
+				F0A7B87D314FAA84FD9884A2 /* CTLibraryDependency */,
+				1ECB0F32DCA263AA307F5BC3 /* CTProjectDependency */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,8 +205,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				938943BD2BF9DE8C760896C4 /* PBXTargetDependency */,
-				6E97446FA95E77BABC08294D /* PBXTargetDependency */,
+				F980C1B08DCD50CC940C8703 /* PBXTargetDependency */,
+				3C9A76E42F5AF67D26C22166 /* PBXTargetDependency */,
 			);
 			name = XcodeProjTest;
 			productName = XcodeProjTest;
@@ -217,12 +242,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = BF3F8CA1A6E02A75016FE4AE /* Products */;
-					ProjectRef = 37F155A3163C4EC9DBB83F6A /* XcodeProjLibA.xcodeproj */;
+					ProductGroup = 3BA9CA0B602C56F673C8739D /* Products */;
+					ProjectRef = 6468EB2D4B575385443AF763 /* XcodeProjLibA.xcodeproj */;
 				},
 				{
-					ProductGroup = 2133A9E691061B6F37E0F6FC /* Products */;
-					ProjectRef = 167C13625438EA3FC924CAF7 /* XcodeProjLibB.xcodeproj */;
+					ProductGroup = 19C7CC85F9E87EF1897FE3F1 /* Products */;
+					ProjectRef = 222AC9C68723A437C3146058 /* XcodeProjLibB.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -233,25 +258,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4E4337D6D621F718349E1799 /* libXcodeProjLibB.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libXcodeProjLibB.a;
-			remoteRef = BE216F5DEFFA993B70FF7897 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AB005FEE0664A689D6ED283E /* XcodeProjLibABundle.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = "wrapper.plug-in";
-			path = XcodeProjLibABundle.bundle;
-			remoteRef = 31733534B0639C9A12B1F6E8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		BB55EF469691A8374DC8A22B /* libXcodeProjLibA.a */ = {
+		22570C585022FCBD9ED5BE1D /* libXcodeProjLibA.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libXcodeProjLibA.a;
-			remoteRef = 146EC7C7D8A52BA132D1EA08 /* PBXContainerItemProxy */;
+			remoteRef = FCA7F1B422E15EA0E37AA18C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		43AD983D07D342E5822D7A96 /* libXcodeProjLibB.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libXcodeProjLibB.a;
+			remoteRef = 0B50C19E80557E6780B5F527 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8E698C76E4E579204E1FD645 /* XcodeProjLibABundle.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.plug-in";
+			path = XcodeProjLibABundle.bundle;
+			remoteRef = AD8366795AE308EC51AF539F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -264,6 +289,7 @@
 				F5D8DB6B1F0F731700F5927C /* LaunchScreen.storyboard in Resources */,
 				F5D8DB681F0F731700F5927C /* Assets.xcassets in Resources */,
 				F5D8DB661F0F731700F5927C /* Main.storyboard in Resources */,
+				18CCE18578DD4F72ADE45A6E /* ARBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,15 +309,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6E97446FA95E77BABC08294D /* PBXTargetDependency */ = {
+		3C9A76E42F5AF67D26C22166 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XcodeProjLibB;
-			targetProxy = 7F65DF3D78145C269DBF3AE0 /* PBXContainerItemProxy */;
+			targetProxy = 37760BE4B07A429500ADD57F /* PBXContainerItemProxy */;
 		};
-		938943BD2BF9DE8C760896C4 /* PBXTargetDependency */ = {
+		F980C1B08DCD50CC940C8703 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = XcodeProjLibA;
-			targetProxy = D7B45C118C7092EDBA169274 /* PBXContainerItemProxy */;
+			targetProxy = 9C20C25F53D74DD0619C59FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,12 +438,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S6JRCXC6CG;
-				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/libraries/libC/**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibA/XcodeProjLibA.xcodeproj/../**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/libraries/libC/**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibA/XcodeProjLibA.xcodeproj/../**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**",
+				);
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/libraries/libC/**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibA/XcodeProjLibA.xcodeproj/../**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = fff.XcodeProjTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,12 +466,24 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S6JRCXC6CG;
-				FRAMEWORK_SEARCH_PATHS = "";
-				HEADER_SEARCH_PATHS = "/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/libraries/libC/**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibA/XcodeProjLibA.xcodeproj/../**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**",
+				);
+				HEADER_SEARCH_PATHS = (
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/libraries/libC/**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibA/XcodeProjLibA.xcodeproj/../**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**",
+				);
 				INFOPLIST_FILE = XcodeProjTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/libraries/libC/**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibA/XcodeProjLibA.xcodeproj/../**",
+					"/Users/tczhu/work/CodeTest/xcodeproj-test/XcodeProjLibB/XcodeProjLibB.xcodeproj/../**",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = fff.XcodeProjTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

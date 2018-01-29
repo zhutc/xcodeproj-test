@@ -51,6 +51,14 @@ class CTXcodeProjManager
     return project.native_targets.first
   end
 
+  def main_group # 自定义main_group
+    group = project.main_group["Dependency"]
+    if group
+      return group
+    end
+    project.main_group
+  end
+
   def initialize(path)
     self.root_project_path = path
     @project = Xcodeproj::Project.open(path)
@@ -59,10 +67,10 @@ class CTXcodeProjManager
 
   # 创建对应的group
   def create_group_if_need(group_name)
-    if not project.main_group[group_name]
-      project.new_group group_name
+    if not self.main_group[group_name]
+      self.main_group.new_group group_name
     end
-    project.main_group[group_name]
+    self.main_group[group_name]
   end
 
   # 创建 library 下的子bundle group
@@ -258,7 +266,7 @@ class CTXcodeProjManager
         end
       end
       # 2. add .bundle
-      if bundle.has_bundle
+      if bundle.has_bundle and not bundle.uncopy_resource
         bundle.bundles.each do | bundle_path |
           real_path = bundle.real_library_path bundle_path
           bundle_file_reference = dependency_group.new_reference real_path
@@ -290,7 +298,7 @@ class CTXcodeProjManager
     # dependency_group = Xcodeproj::Project::PBXGroup.new(self.project , "") #仅仅是为了代码补全
     # target = Xcodeproj::Project::PBXNativeTarget.new(project,"") #仅仅是为了代码补全
 
-    if bundle.has_bundle
+    if bundle.has_bundle and not bundle.uncopy_resource
       bundle_group.files.each do | bundle_files_reference |
         if target.resources_build_phase.include? bundle_files_reference
             target.resources_build_phase.remove_file_reference bundle_files_reference
@@ -342,6 +350,7 @@ def test_add_library()
                                       :libraries => [ "libXcodeProjLibC.a" ],
                                       :bundles => [ "ARBundle.bundle" ],
                                       :has_include => true,
+                                      :uncopy_resource => true,
                                   })
   manager.remove_bundle test_bundle
   manager.add_bundle test_bundle
